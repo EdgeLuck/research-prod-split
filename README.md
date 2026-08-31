@@ -144,4 +144,20 @@ test_split.py    boundary, pinning, and correctness guards
 
 Standard library only. No pandas, no numpy.
 
+## Related
+
+Four repositories extracted from one production trading system.
+
+- **[dead-ends](https://github.com/pashufa1981-glitch/dead-ends)** — the research log this
+  split exists to serve: roughly three dozen rejected hypotheses, and the
+  protocol behind the tests here. Both mistakes encoded in this repository —
+  fees taken from memory, drawdown computed in list order — are written up there
+  at length.
+- **[subtractive-agents](https://github.com/pashufa1981-glitch/subtractive-agents)** — the
+  decision architecture that consumes what the engine computes: one measured
+  gate can act, every other agent can only veto or shrink.
+- **[position-guard](https://github.com/pashufa1981-glitch/position-guard)** — the
+  watchdog on the deployed side, checking that every open position has a stop
+  that would actually fill.
+
 MIT licensed.
